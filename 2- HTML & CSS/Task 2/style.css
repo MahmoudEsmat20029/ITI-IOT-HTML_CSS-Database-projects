@@ -1,0 +1,32 @@
+table{
+  background-color: rgba(50, 100, 16, 0.589);
+  margin: auto;
+}
+
+h1{
+ text-align: center;
+}
+
+td{
+  text-align: center;
+  padding: 10px;
+}
+
+textarea{
+  resize: none;
+}
+
+input[type=text], input[type=password], input[type=email], select, input[type=date],textarea {
+  width: 70%;
+  padding: 5px;
+  margin: 8px 0;
+}
+
+input [type =radio],input[type=checkbox]{
+  margin: auto;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color:rgba(50, 100, 65);
+}
+

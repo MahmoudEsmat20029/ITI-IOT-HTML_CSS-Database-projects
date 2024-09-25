@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1><u>Registration Form:</u></h1>
+
+    
+        <table border="2">
+            <tr>
+                <td><label for="UserName">Username:</label></td>
+                <td colspan="2"><input type="text" id="firstName" placeholder="Enter your first name"></td>
+            </tr>
+            
+            <tr>
+                <td><label for="Password">Password:</label></td>
+                <td colspan="2"><input type="password" id="password" placeholder="Enter your password"></td>
+            </tr>
+            <tr>
+                <td><label for="Phone ">Phone Number:</label></td>
+                <td colspan="2"><input type="phone" id="phone" placeholder="Enter your Phone Number"></td>
+            </tr>
+            <tr>
+                <td><label for="email ">Email:</label></td>
+                <td colspan="2"><input type="email" id="email" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><label for="gender">Gender:</label></td>
+                <td colspan="2">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                    <input type="radio" id="male" value="male" name="gender"><label for="male"> Male</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="rating">Rate our Session:</label></td>
+                <td colspan="2">
+                    <select id="rating" name="rating">
+                        <option value="country"> Select Country</option>
+
+                        <optgroup label="Africa">
+                            <option value="egypt">Egypt</option>
+                            <option value="nigeria">Nigeria</option>
+                        </optgroup>
+
+                        <optgroup label="Europ">
+                            <option value="itali"> itali</option>
+                            <option value="spain"> spain</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <td ><label for="Birthday">Birthday</label></td>
+            <td  colspan="2"><input type="date" id="Birthday" name="Birthday"></td>
+
+            <tr><td colspan="3"  ><label for="interests" ><u  >Interests:</u></label></td></tr>
+
+            <td >
+                <input type="checkbox" id="sports" name="interests" value="sports"> 
+                <label for="sports">Sports</label>
+            </td>
+
+            <td>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label>
+            </td>
+
+            <td>
+                <input type="checkbox" id="fashion" name="interests" value="fashion">
+                <label for="fashion">Fashion</label>
+            </td>
+
+        <tr>
+            <td>
+                <input type="checkbox" id="reading" name="interests" value="reading">
+                <label for="reading">Reading</label>
+            </td>
+
+            <td>
+                <input type="checkbox" id="shopping" name="interests" value="shopping">
+                <label for="shopping">Shopping</label>
+            </td>
+
+            <td>
+                <input type="checkbox" id="movies" name="interests" value="movies">
+                <label for="movies">Movies</label>
+            </td>
+        </tr>
+        
+        <tr><td colspan="3"> <label for="bio"><u>Bio</u></label></td></tr>
+        <tr><td  colspan="3"><textarea rows="6" cols="30"></textarea></td></tr>
+          
+        <tr>
+            <td colspan="3" rowspan="2">
+              <pre>  <input type="reset" value="Reset" >   <input type="submit" value="submit"> </pre>
+            </td>
+        </tr>
+        
+        </table>
+    </form>
+</body>
+
+</html>

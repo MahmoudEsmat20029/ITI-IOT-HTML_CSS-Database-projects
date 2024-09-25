@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <style>
+        .slideshow img {
+            width: 450px;
+            height: auto;
+            display: none;
+        }
+        .slideshow img.active {
+            display: block;
+        }
+    </style>
+  </head>
+
+  <body>
+    <button onclick="prevImage()">Previous</button>
+    <button onclick="nextImage()">Next</button>
+    <button onclick="startSlideshow()">Slideshow</button>
+    <button onclick="stopSlideshow()">Stop</button>
+    
+    <div class="slideshow">
+      <img src="1.webp" class="active">
+      <img src="2.webp">
+      <img src="3.webp">
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      let slides = document.querySelectorAll('.slideshow img');
+      let slideshowInterval;
+
+      function showSlide(index) {
+          slides.forEach((slide, i) => {
+              slide.classList.remove('active');
+              if (i === index) {
+                  slide.classList.add('active');
+              }
+          });
+      }
+
+      function nextImage() {
+          slideIndex = (slideIndex + 1) % slides.length;
+          showSlide(slideIndex);
+      }
+
+      function prevImage() {
+          slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+          showSlide(slideIndex);
+      }
+
+      function startSlideshow() {
+          slideshowInterval = setInterval(nextImage, 1000); // Change image every 1 seconds
+      }
+
+      function stopSlideshow() {
+          clearInterval(slideshowInterval);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        .show img {
+            width: 200px;
+            height: auto;
+            display: none;
+        }
+        .show img.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr><td><a href="https://example.com">Link</a></td></tr>
+    </table>
+
+     <div class="show">
+        <img src="1.webp" alt="Image 1" class="active">
+        <img src="2.webp" alt="Image 2" class="active">
+     </div>
+    
+    <form id="userData">
+        <input type="checkbox" value="Option 1"> Option 1<br>
+        <input type="checkbox" value="Option 2"> Option 2<br>
+        <input type="checkbox" value="Option 3"> Option 3<br>
+        <input type="checkbox" value="Option 4"> Option 4<br>
+        <button type="button" onclick="alertCheckedValues()">Defined values show</button>
+    </form>
+
+    <div id="example" style="width: 100px; height: 100px;">This is example</div>
+
+    <script>
+        let secondTable = document.getElementsByTagName('table')[0];
+        let firstAnchor = secondTable.getElementsByTagName('a')[0];
+        firstAnchor.href = "https://training.com";
+        firstAnchor.textContent = "Training";
+
+        let images = document.getElementsByTagName('img');
+        for (let img of images) {
+            img.style.border = "solid pink 2px";
+        }
+
+        function alertCheckedValues() {
+            let form = document.forms['userData'];
+            let checkboxes = form.querySelectorAll('input[type="checkbox"]:checked');
+            let checkedValues = [];
+            checkboxes.forEach(function(checkbox) {
+                checkedValues.push(checkbox.value);
+            });
+            alert("Defined values is: " + checkedValues.join(', '));
+        }
+
+        let exampleElement = document.getElementById('example');
+        exampleElement.style.backgroundColor = 'pink';
+    </script>
+</body>
+</html>

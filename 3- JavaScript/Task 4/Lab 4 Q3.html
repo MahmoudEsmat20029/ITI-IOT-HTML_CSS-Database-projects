@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .error {
+            color: red;
+        }
+        .valid {
+            color: green;
+        }
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Validation</h2>
+    <form id="validationForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name"><br>
+        <span id="nameError" class="error"></span><br>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age"><br>
+        <span id="ageError" class="error"></span><br>
+
+        <label for="grade">Grade</label>
+        <input type="number" id="grade" name="grade"><br>
+        <span id="gradeError" class="error"></span><br>
+
+        <input type="button" value="add student" id="example" onclick="validateForm()">
+    </form>
+
+    <div id="result" class="valid"></div>
+
+    <h3>Valid Data:</h3>
+    <table id="validDataTable"></table>
+
+    <script src="js Q3.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>

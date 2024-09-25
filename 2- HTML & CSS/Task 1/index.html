@@ -1,0 +1,164 @@
+<!-- 
+    1- What is HTML?
+    - (HyperText Markup Language) It's the standard language used to create and design webpages. 
+    ========================================================================================
+    2- Give me the difference between {[b , strong], [i,em], [s,del], [s-,ins]} :
+    ------------------------------------- b vs. strong -------------------------------------
+    - '<b> (Bold)': This tag is used to apply bold formatting to text. 
+    - '<strong> (Strong Emphasis)': This tag also makes text bold by default, 
+                                    but it semantically indicates that the text is of strong importance or emphasis.
+    ------------------------------------- i vs. em -----------------------------------------
+    - '<i> (Italic)': This tag is used to italicize text.
+    - '<em> (Emphasis)': This tag also italicizes text but indicates that the text should be emphasized.
+    ------------------------------------- s vs. dell ---------------------------------------
+    - '<s> (Strikethrough)': This tag is used to apply a strikethrough style to text.
+    - '<del> (Deleted Text)': This tag also applies a strikethrough style but has a semantic meaning 
+                              indicating that the text has been deleted or removed from the document. 
+    ------------------------------------- s- vs. ins ---------------------------------------
+    - '<s> (Strikethrough)': As mentioned, <s> is used for visual strikethrough.
+    - '<ins> (Inserted Text)': This tag is used to indicate text that has been inserted into a document.
+-->
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width = device-width, intianl-scale = 1.0">
+        <meta name="keywords" content="Hello, world">
+        <meta name="author" content="Mahmoud Esmat">
+        <meta name="description" content="This is my website">
+
+        <title>Hello, world</title>
+
+        <link rel="icon" href="E:\Projects\Visual Stdio [HTML]\brainstorming.png" type="image/png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>This is paragraph</h1>
+        <!----------------------------------List---------------------------------->
+        <h2><b>Part one: List Example</b></h2>
+        <ul>
+            <ol>List Item 1
+                <ul style = "list-style:square;">
+                    <li>Nested Item 1.1</li>
+                    <li>Nested Item 1.2</li>
+                </lu>
+            </ol>
+            <ol>List Item 2
+                <ul style = "list-style:square;">
+                    <li>Nested Item 2.1</li>
+                    <li>Nested Item 2.2</li>
+                    <ul style = "list-style:circle;">
+                        <li>Nested Item 2.2.1</li>
+                        <li>Nested Item 2.2.2</li>
+                        <ol>
+                            <li>Nested Item 2.2.2.1</li>
+                            <li>Nested Item 2.2.2.2</li>
+                        </ol>
+                        <li>Nested Item 2.2.3</li>
+                    </ul>
+                    <li>Nested Item 2.3</li>
+                </ul>
+            </ol>
+            <ol>List Item 3
+                <ul style = "list-style:square;">
+                    <li>Nested Item 3.1</li>
+                    <li>Nested Item 3.2</li>
+                </lu>
+            </ol>
+        </ul>
+        <!----------------------------------List End---------------------------------->
+        <!----------------------------------Table---------------------------------->
+        <h2><b>Part two: The Table</b></h2>
+        <table border="1">
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+                <tr>
+                    <th colspan="2">Scheduale</th>
+                    <th rowspan="2">Topic</th>
+                    <tr>
+                        <th>Begin</th>
+                        <th>End</th>
+                    </tr>
+                </tr>
+            </tr>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m.</td>
+                <td rowspan="2">5:00 p.m.</td>
+                <td>Introduction to XML</td>
+                <tr>
+                    <td>Valdidity: DTD and Relax NG</td>
+                </tr>
+            </tr>
+            <tr>
+                <td rowspan="6">Tuesday</td>
+                <td rowspan="2">8:00 a.m.</td>
+                <td rowspan="2">11:00 a.m.</td>
+                <td rowspan="3">XPath</td>
+                <tr>
+                    <tr>
+                        <td rowspan="2">8:00 a.m.</td>
+                        <td rowspan="2">11:00 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">XSL Transformation</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">8:00 a.m.</td>
+                        <td rowspan="2">11:00 a.m.</td>
+                    </tr>
+                </tr>
+            </tr>
+            <tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>8:00 a.m.</td>
+                    <td>12:00 p.m.</td>
+                    <td>XSL Formatting Objects</td>
+                </tr>
+            </tr>
+        </table>
+        <!----------------------------------Table End---------------------------------->
+        <!----------------------------------Last---------------------------------->
+        <!-- Links -->
+        <h1>Part three: </h1>
+
+        <!-- Target link -->
+        <a href="#section1">Go to Section 1 "Target in the same page"</a>
+        <a href="anotherpage.html">Go to Another Page "Target in another page"</a>
+
+        <h2 id="section1">Section 1</h2>
+        <p>This is Section 1.</p>
+
+        <!-- Image with URL "Just example not Real URL"-->
+        <img width="10" height="10" src="https://www.example.com/image.jpg" alt="Example Image">
+
+        <!-- Image with Relative Path -->
+        <img src="E:\Projects\Visual Stdio [HTML]\brainstorming.png" alt="Photo">
+
+        <!-- Image as a Link -->
+        <a href="https://www.wikipedia.org" target="_blank">
+        <img src="https://via.placeholder.com/100" alt="Example Image"></a>
+
+        <!-- YouTube Video -->
+        <iframe width="350" 
+        height="200" 
+        src="https://youtube.com/embed/qwd8vPaI7MU?si=UM2eUjCUv_DGVtug" 
+        title="YouTube video player"  
+        allowfullscreen>
+        </iframe>
+
+        <!-- Video -->
+        <video width="350" height="200" controls>
+        <source src="E:\Projects\Visual Stdio [HTML]\1.mp4" type="video/mp4">
+        </video>
+
+        <!-- Audio -->
+        <audio controls>
+        <source 
+        src="E:\Projects\Visual Stdio [HTML]\1.mp4" 
+        type="audio/mpeg">
+        </audio>
+        <!----------------------------------Last End---------------------------------->
+    </body>
+</html>

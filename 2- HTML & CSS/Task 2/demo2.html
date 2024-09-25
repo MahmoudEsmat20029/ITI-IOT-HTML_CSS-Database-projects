@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+    form {
+        background-color: #27dd85;
+        padding: 1em;
+        margin: 2rem auto;
+        border: 1px solid #3a8392;
+        border-radius: 10px;
+        width: 80%;
+    }
+    h2{
+        text-align: center;
+    }
+
+    fieldset {
+        border: none;
+        padding: 0.5em; 
+    }   
+
+    legend {
+        font-weight: bold;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        padding: 0.5em;
+        border: 1px solid #50af8b;
+        border-radius: 3px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    button[type="submit"] {
+        background-color: #9790f4;
+        color: rgb(11, 15, 17);
+        padding: 0.5em 1em;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>Registration Form</h2>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </fieldset>
+
+            <button type="submit">Register</button>
+
+            <p>By clicking "Register", you agree to our <a href="#">Terms and Conditions ya proooo</a>.</p>
+        </form>
+    </section>
+</body>
+</html>

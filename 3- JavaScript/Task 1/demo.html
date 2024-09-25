@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        h1{
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(238, 17, 17, 0.5);
+          
+        }
+    </style>
+</head>
+<body>
+    <h1>Mahmoud Esmat</h1>
+    <script>
+        console.log(number1); //  error as number1 is defined in External.js
+    </script>
+    <script src="Extrnal.js">
+    </script>
+
+    <script>
+        console.log(number1); //  output 3
+    </script>
+
+    <script>
+         var number1 = 3;
+        var number2 = 2.9;
+        var number3 = 0xff;
+
+       var firstName = "Mahmoud";
+       var middleName = 'Esmat';
+       var lastName = `Abdallah`;
+
+        let flag = true;
+
+
+ // Summation of number1 and number2
+   console.log(number1 + number2);
+
+// Summation of flag and number2
+console.log(flag + number2);
+
+// Summation of firstName and flag
+console.log(firstName + flag); 
+
+// Summation of number1 and firstName
+console.log(number1 + firstName);
+// Multiplication of number1 and flag
+console.log(number1 * flag);
+
+// Divide number1 and lastName
+console.log(number1 / lastName); 
+
+// Print full name 
+console.log(`${firstName} ${middleName} ${lastName}`);
+    </script>
+</body>
+</html>
