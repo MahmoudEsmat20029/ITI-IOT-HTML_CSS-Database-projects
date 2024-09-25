@@ -1,11 +1,3 @@
---Day 10:
---  "https://medium.com/@kumarjai2466/er-to-relational-mapping-ac84b3c9f258"
-
-
---Day11:
--- use "https://onecompiler.com/mysql" or download mysql server & workbench
-
-
 CREATE TABLE Employee (
     Fname VARCHAR(50),
     Lname VARCHAR(50),
